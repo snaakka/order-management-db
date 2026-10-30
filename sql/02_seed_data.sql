@@ -30,23 +30,23 @@ VALUES
 
 INSERT INTO orders (
     customer_id, order_date, shipping_date, status,
-    shipping_address, shipping_zip_code, shipping_country
+    shipping_address, shipping_city, shipping_zip_code, shipping_country
 )
 VALUES
     (1, '2026-10-01 10:00:00+03', NULL, 'pending',
-     'Koulukatu 12', '80100', 'Finland'),
+     'Koulukatu 12', 'Joensuu', '80100', 'Finland'),
 
     (2, '2026-10-02 12:30:00+03', '2026-10-03 09:00:00+03', 'shipped',
-     'Kauppakatu 5', '80110', 'Finland'),
+     'Kauppakatu 5', 'Joensuu', '80110', 'Finland'),
 
     (3, '2026-10-04 14:00:00+03', '2026-10-06 11:00:00+03', 'completed',
-     'Kirkkokatu 8', '80200', 'Finland'),
+     'Kirkkokatu 8', 'Joensuu', '80200', 'Finland'),
 
     (4, '2026-10-05 16:15:00+03', NULL, 'processing',
-     'Storgatan 15', '11122', 'Sweden'),
+     'Storgatan 15', 'Stockholm', '11122', 'Sweden'),
 
     (5, '2026-10-07 08:45:00+03', NULL, 'cancelled',
-     'Hauptstrasse 20', '10115', 'Germany');
+     'Hauptstrasse 20', 'Berlin', '10115', 'Germany');
 
 
 INSERT INTO order_lines (

@@ -29,6 +29,7 @@ CREATE TABLE orders (
         CONSTRAINT valid_status 
         CHECK (status IN ('pending', 'processing', 'shipped', 'completed', 'cancelled')),
     shipping_address VARCHAR(200) NOT NULL,
+    shipping_city VARCHAR(100) NOT NULL,
     shipping_zip_code VARCHAR(20) NOT NULL,
     shipping_country VARCHAR(100) NOT NULL,
 
